@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #413f3f;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+        .textarea{
+            background: none;
+            color: aliceblue;
+        }
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: "Montserrat";
+            font-weight: lighter;
+        }
+        input[type=submit]:hover {
+            background-color: #3e463e;
+
+        }
+        .container {
+            border-radius: 5px;
+            background-color: #141414;
+            padding: 20px;
+            font-family: "Montserrat";
+            font-weight: bold;
+            color: bisque;
+        }
+        .detail{
+            color: aliceblue;
+            background: none;
+        }
+    </style>
+    <div class="container">
+        <form action="action_page.php">
+
+            <label class="detail" for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label class="detail" for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Design</label>
+            <select id="country" name="country">
+                <option value="banner">Banner</option>
+                <option value="poster">Poster</option>
+                <option value="flyer">Flyer</option>
+                <option value="logo">Logo</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea class="textarea" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>

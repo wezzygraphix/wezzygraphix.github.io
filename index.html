@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        font-family: "Montserrat";
+        background-image: url("C:\Users\Wezzy Graphic\Desktop\HTML/background.png");
+        background-size: cover;
+        background-color: rgb(0, 0, 0);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-family: "Montserrat";
+        font-weight: 900;
+        padding-top: 40px;
+    }
+
+    h6,
+    h1 {
+        margin: 0px;
+        color: aliceblue;
+    }
+
+    main {
+        padding-top: 80px;
+        padding-left: 64px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 64px;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("C:\Users\Wezzy Graphic\Desktop\Web2\Montserrat-Regular.ttf");
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    a {
+        margin-left: 16px;
+        font-family: "Montserrat";
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .wezzy {
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 40%;
+    }
+
+    .searchbar {
+        background: transparent;
+        border-radius: 12px;
+        padding-left: 20px;
+        color: azure;
+        min-width: 300px;
+    }
+
+    .content {
+        z-index: 1;
+        position: relative;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .ripple {
+        background-position: center;
+        transition: background 0.8s;
+    }
+
+    .ripple:hover {
+        background-color: #d68a8a;
+    }
+
+    .ripple:active {
+        background-color: #ffffff;
+        background-size: 100%;
+        transition: background 0s;
+    }
+
+    button {
+        border: none;
+        border-radius: 2px;
+        padding: 12px 18px;
+        font-family: "Montserrat";
+        font-weight: bolder;
+        font-size: 16px;
+        cursor: pointer;
+        background: hsl(0, 52%, 31%) radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+        color: white;
+        box-shadow: 0 0 4px #999;
+        outline: none;
+    }
+</style>
+
+
+<body>
+    <video muted autoplay loop class="wezzy" src="/bg.mp4"></video>
+
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <img width="30" height="30" src="/logo.png" alt="" />
+                <input class="searchbar" type="text" placeholder="Search">
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">Pricing</a>
+                    <a href="/services.html">Services</a>
+                    <a href="/contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h1>Get A <br />Profesional <br />Design From Us </h1>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam unde adipisci maxime esse
+                    recusandae quos soluta totam <br />dolores quis praesentium. Dolorum, dolor iste. Vitae, impedit
+                    esse?
+                    Architecto eaque iusto atque.</h6>
+            </div>
+            <div>
+                <img width="350" height="350" src="/logov2.png" alt="" />
+            </div>
+
+        </main>
+
+        <div class="footer">
+            <button class="ripple"><a href="https://wa.me/message/AC4VUNBHG563P1">Order Now</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
